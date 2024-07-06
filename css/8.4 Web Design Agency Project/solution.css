@@ -42,9 +42,9 @@ footer {
 }
 
 @media (max-width: 680px) {
-  .logo {
-    width: 100px;
-  }
+    .logo {
+      width: 100px;
+    }
 
   h1 {
     font-size: 3.5rem;
@@ -58,10 +58,10 @@ footer {
     text-align: justify;
   }
 
-  .card img {
-    margin-bottom: 10px;
-    width: 100%;
-    display: inline;
-    object-fit: cover;
-  }
+    .card img {
+      margin-bottom: 10px;
+      width: 100%;
+      display: inline;
+      object-fit: cover;
+    }
 }
