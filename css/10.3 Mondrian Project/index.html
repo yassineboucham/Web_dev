@@ -19,22 +19,74 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .bg{
+      background-color: #F0F1EC;
+      width: 748px;
+      height: 748px;
+    }
+    .pint{
+      background-color: black;
+      display: grid;
+      grid-template-columns: 320px 428px;
+      grid-template-rows:414px 285px 20px;
+      gap: 9px;
+    }
+    .d1{
+      background-color: #E72F24;
+    }
+    .d2{
+      background-color: #F0F1EC;
+    }
+    .d3{
+      background-color: #F0F1EC;
+    }    
+    .d4{
+      background-color: #F0F1EC;
+    }
+
+    .l1{
+      background-color: rgb(52, 189, 98);
+      width: 50px;
+      height: 130px;
+      float: right;
+    }
+    .c1{
+      background-color: aquamarine;
+      width: 198px;
+      height: 20px;
+    }
+    .c2{
+      background-color: rgb(255, 127, 191);
+      width: 153px;
+      height: 20px;
+    }
+    .d5{
+      background-color: #F0F1EC;
+    }
+    .d6{
+      display: flex;
+      background-color: #F0F1EC;
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+   <div class="bg">
    <div class="pint">
-    <div class="d1"></div>
-    <div class="d2"></div>
-    <div class="d3"></div>
-    <div class="d4"></div>
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4
+      <div class="l1"></div>
+    </div>
     <div class="d5"></div>
-    <div class="d6"></div>
-    <div class="d7"></div>
-    <div class="d8"></div>
-    <div class="d9"></div>
+    <div class="d6">
+      <div class="c1"></div>
+      <div class="c2"></div>
+    </div>
    </div>
+  </div>
 </body>
 
 </html>
