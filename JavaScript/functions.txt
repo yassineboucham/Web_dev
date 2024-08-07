@@ -1,0 +1,11 @@
+alert();
+prompt();
+str.length;
+str.slice(0,5);
+str.toUpperCase();
+str.toLowerCase();
+/*
+    var name = prompt("enter your name:");
+    name = name.slice(0,1).toUpperCase() + name.slice(1,(name.length)).toLowerCase();;
+    alert(name);
+*/
