@@ -10,3 +10,5 @@ str.toLowerCase();
     alert(name);
 */
 Math.round(2.51); -> 3
+Math.random();
+Math.floor(2.6); -> 2
