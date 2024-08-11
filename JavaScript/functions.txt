@@ -16,3 +16,7 @@ Math.floor(2.6); -> 2
 arr.includes([...]); -> true / false
 arr.push(2); add 2 to arr
 arr.pop(); remove the last element form arr
+
+/// DOM js
+
+* <body onload="alert('Hello');">
