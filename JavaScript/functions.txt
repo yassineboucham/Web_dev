@@ -20,3 +20,15 @@ arr.pop(); remove the last element form arr
 /// DOM js
 
 * <body onload="alert('Hello');">
+* document.querySelector("h1").innerHTML = "Good Bye"; chenge the text form h1
+
+--> #document; <!DOCTYPE html> ...
+--> document.firstElementChild; <html>...</html>
+--> document.firstElementChild.firstElementChild; <head>...</head>
+--> document.firstElementChild.lastElementChild; <body><h1>Hello</h1>...</body>
+--> document.firstElementChild.lastElementChild.firstElementChild; <h1>Hello</h1>
+
+--> var elm = document.firstElementChild.lastElementChild.firstElementChild;
+    elm; -> <h1>Hello</h1>
+    elm.innerHTML = "my js"; ->  <h1>my js</h1> change the h1
+    elm.style.color = "red"; -> change the color form the difolt color (black) to red
