@@ -32,3 +32,13 @@ arr.pop(); remove the last element form arr
     elm; -> <h1>Hello</h1>
     elm.innerHTML = "my js"; ->  <h1>my js</h1> change the h1
     elm.style.color = "red"; -> change the color form the difolt color (black) to red
+
+
+$ document.getElementById(id); //Find an element by element id
+$ document.getElementsByTagName(name); //Find elements by tag name
+$ document.getElementsByClassName(name); //Find elements by class name
+$ element.innerHTML =  new html content;
+$ element.textContent = just text content;
+$ document.querySelector("button").classList.add("invisible"); -> add (invisible) in the class
+$ document.querySelector("button").classList.remove("invisible"); -> remove (invisible) in the class
+$ document.querySelector("button").classList.toggel("invisible"); -> if is applaid remove if (invisible) else add it in the class
