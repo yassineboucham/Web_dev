@@ -42,3 +42,7 @@ $ element.textContent = just text content;
 $ document.querySelector("button").classList.add("invisible"); -> add (invisible) in the class
 $ document.querySelector("button").classList.remove("invisible"); -> remove (invisible) in the class
 $ document.querySelector("button").classList.toggel("invisible"); -> if is applaid remove if (invisible) else add it in the class
+
+% document.querySelector("a").attributes; ->{0: href, href: href, length: 1}
+% document.querySelector("a").getAttribute("href"); ->'https://www.google.com'
+% document.querySelector("a").setAttribute("href", "yaasine.com"); ->henge the href from 'https://www.google.com' to 'yaasine.com'
