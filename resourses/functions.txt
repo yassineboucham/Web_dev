@@ -46,3 +46,9 @@ $ document.querySelector("button").classList.toggel("invisible"); -> if is appla
 % document.querySelector("a").attributes; ->{0: href, href: href, length: 1}
 % document.querySelector("a").getAttribute("href"); ->'https://www.google.com'
 % document.querySelector("a").setAttribute("href", "yaasine.com"); ->henge the href from 'https://www.google.com' to 'yaasine.com'
+
+
+addEventListener("click", yourfunction);
+
+debugger;//it for debuging in google consol
+fuction();
