@@ -29,3 +29,13 @@ $("a").removeAttr("class")
 $("p").on("click", function(){
   alert("The paragraph was clicked.");
 });
+//jQuery after() Method
+//Insert content after each <p> element:
+$("button").click(function(){
+  $("p").after("<p>Hello world!</p>");
+});
+//jQuery before() Method
+// Insert content before each <p> element:
+$("button").click(function(){
+  $("p").before("<p>Hello world!</p>");
+});
