@@ -25,3 +25,7 @@ console.log($("h1").attr("id"));
 $(".ca").html("<a>link</a>")
 $("a").attr({"href": "#", "class": "n"})
 $("a").removeAttr("class")
+//jQuery on() Method
+$("p").on("click", function(){
+  alert("The paragraph was clicked.");
+});
