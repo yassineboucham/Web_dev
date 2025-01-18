@@ -39,3 +39,13 @@ $("button").click(function(){
 $("button").click(function(){
   $("p").before("<p>Hello world!</p>");
 });
+//jQuery prepend() Method
+//Insert content at the beginning of all <p> elements:
+$("button").click(function(){
+  $("p").prepend("<b>Prepended text</b>");
+});
+//jQuery append() Method
+//Insert content at the end of all <p> elements:
+$("button").click(function(){
+  $("p").append("<b>Appended text</b>");
+});
