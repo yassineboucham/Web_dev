@@ -49,3 +49,13 @@ $("button").click(function(){
 $("button").click(function(){
   $("p").append("<b>Appended text</b>");
 });
+//jQuery hide() Method
+//Hide all <p> elements:
+$("button").click(function(){
+  $("p").hide();
+});
+//jQuery fadeIn() Method
+//Fade in all <p> elements:
+$("button").click(function(){
+  $("p").fadeIn();
+});
