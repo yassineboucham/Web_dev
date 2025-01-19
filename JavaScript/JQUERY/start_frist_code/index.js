@@ -53,9 +53,21 @@ $("button").click(function(){
 //Hide all <p> elements:
 $("button").click(function(){
   $("p").hide();
+  $("p").hideToggle();
 });
 //jQuery fadeIn() Method
 //Fade in all <p> elements:
 $("button").click(function(){
   $("p").fadeIn();
+  $("p").fadeInToggle();
 });
+/*
+jQuery Sliding Methods
+With jQuery you can create a sliding effect on elements.
+
+jQuery has the following slide methods:
+
+slideDown()
+slideUp()
+slideToggle()
+*/
