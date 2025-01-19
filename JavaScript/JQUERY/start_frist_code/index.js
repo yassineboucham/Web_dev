@@ -71,3 +71,9 @@ slideDown()
 slideUp()
 slideToggle()
 */
+//jQuery Animations - The animate() Method
+//The jQuery animate() method is used to create custom animations.
+//syntax :$(selector).animate({params},speed,callback);
+$("button").click(function(){
+  $("div").animate({left: '250px'});
+});
