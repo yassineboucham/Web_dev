@@ -13,13 +13,16 @@ simon_random_klik();
 simon_random_klik();
 simon_random_klik();
 let arr_click = [];
-function simon_klik(){
-    $("div").click(function(){
-        arr_click.push(this.ClassName);
-    });
-}
-simon_klik()
-while(arr_click.length > arr.length){
-}
-console.log(arr_click);
 console.log(arr);
+$("div").click(function(){
+    arr_click.push(this.className);
+    console.log(arr);
+    console.log(arr_click);
+    if(arr[arr_click.length] != arr_click[arr_click.length]){
+        console.log("Gami over");
+        arr = [];
+    }
+    if(arr_click.length != arr.length){
+        return;
+    }
+});
