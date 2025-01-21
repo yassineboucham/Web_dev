@@ -8,6 +8,18 @@ function simon_random_klik(){
     arr.push(rand)
     Level++;
 }
+$("#green").click(function(){
+    $(this).animate({opacity: '0.7'}).animate({opacity: '1'});
+});
+$("#red").click(function(){
+    $(this).animate({opacity: '0.7'}).animate({opacity: '1'});
+});
+$("#yellow").click(function(){
+    $(this).animate({opacity: '0.7'}).animate({opacity: '1'});
+});
+$("#blue").click(function(){
+    $(this).animate({opacity: '0.7'}).animate({opacity: '1'});
+});
 simon_random_klik();
 let arr_click = [];
 console.log(arr);
@@ -22,7 +34,7 @@ $("div").click(function(){
     if(arr_click.length == arr.length){
         arr_click = [];
         simon_random_klik();
-        
+        console.log("level:" + Level);
     }
     console.log(arr);
     console.log(arr_click);
