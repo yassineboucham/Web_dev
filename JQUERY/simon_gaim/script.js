@@ -9,20 +9,21 @@ function simon_random_klik(){
     Level++;
 }
 simon_random_klik();
-simon_random_klik();
-simon_random_klik();
-simon_random_klik();
 let arr_click = [];
 console.log(arr);
 $("div").click(function(){
     arr_click.push(this.className);
-    console.log(arr);
-    console.log(arr_click);
-    if(arr[arr_click.length] != arr_click[arr_click.length]){
+    if(arr[arr_click.length - 1] != arr_click[arr_click.length - 1]){
         console.log("Gami over");
+        arr_click = [];
         arr = [];
-    }
-    if(arr_click.length != arr.length){
         return;
     }
+    if(arr_click.length == arr.length){
+        arr_click = [];
+        simon_random_klik();
+        
+    }
+    console.log(arr);
+    console.log(arr_click);
 });
