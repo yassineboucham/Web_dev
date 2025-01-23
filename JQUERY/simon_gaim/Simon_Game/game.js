@@ -1,6 +1,8 @@
 let buttonColours = ["red", "blue", "green", "yellow"];
 let userClickedPattern = [];
 let gamePattern = [];
+let level = 0;
+let check = false;
 function playSound(name){
     var audio = new Audio('sounds/' + name + '.mp3');
     audio.play();
@@ -13,6 +15,8 @@ function animatePress(currentColour){
     
 }
 function nextSequence(){
+    level++;
+    $("h1").text("Level: " + level);
     let randomNumber = Math.floor(Math.random() * 4);
     let randomChosenColour = buttonColours[randomNumber];
     gamePattern.push(randomChosenColour);
@@ -25,4 +29,11 @@ $(".btn").click(function(){
     playSound(userChosenColour);
     animatePress(userChosenColour);
 });
-nextSequence();
+
+$("body").keypress(function(){
+    if(!check){
+        $("h1").text("Level: " + level);
+        nextSequence();
+        check = true;
+    }
+});
