@@ -28,6 +28,7 @@ $(".btn").click(function(){
     userClickedPattern.push(userChosenColour);
     playSound(userChosenColour);
     animatePress(userChosenColour);
+    checkAnswer(userClickedPattern.length - 1);
 });
 
 $("body").keypress(function(){
@@ -37,3 +38,16 @@ $("body").keypress(function(){
         check = true;
     }
 });
+
+function checkAnswer(currentLevel){
+    if(userClickedPattern[currentLevel]==gamePattern[currentLevel]){
+        console.log("success");
+        if(userClickedPattern.length == gamePattern.length){
+            setTimeout(() => {
+                nextSequence();
+            }, 1000);
+        }
+    }else{
+        console.log("wrong");x
+    }
+}
