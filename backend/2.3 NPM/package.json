@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "sillyname": "^0.1.0"
+  },
+  "name": "lern_name",
+  "version": "1.0.0",
+  "description": "lerning npm",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yassine"
+  ],
+  "author": "",
+  "license": "ISC"
+}
