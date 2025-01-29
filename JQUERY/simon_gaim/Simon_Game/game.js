@@ -46,7 +46,7 @@ function checkAnswer(currentLevel){
         if(userClickedPattern.length === gamePattern.length){
             setTimeout(() => {
                 nextSequence();
-            }, 1000);
+            }, 100);
         }
     }else{
         var audio = new Audio("./sounds/wrong.mp3")
