@@ -5,3 +5,4 @@ Creating an Express Server
 4. Install the Express package.
 5. Write Server application in index.js.
 6. Start server.
+server ports : netstat -ano | findstr "LISTENING"
