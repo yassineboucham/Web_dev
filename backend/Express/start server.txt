@@ -6,3 +6,6 @@ Creating an Express Server
 5. Write Server application in index.js.
 6. Start server.
 server ports : netstat -ano | findstr "LISTENING"
+
+//to run intall nodemon using : npm install -g nodemon  
+//to test a request http get put push ... use : https://www.postman.com/
