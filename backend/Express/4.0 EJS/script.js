@@ -1,5 +1,4 @@
 import express from "express";
-import ejs, { name } from "ejs";
 
 const app = express();
 const port = 3000;
