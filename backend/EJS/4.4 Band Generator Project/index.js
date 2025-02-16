@@ -1,6 +1,5 @@
 import express from "express";
 import bodyParser from "body-parser";
-
 const app = express();
 const port = 3000;
 
@@ -18,11 +17,15 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
   //Step 1 - Make the get route work and render the index.ejs file.
-  res.render("index.ejs", {year : year});
+  res.render("index.ejs", {year : year, bandName: undefined});
 });
 
 app.post("/submit", (req, res) => {
   //Step 2 - Make the generate name functionality work
+  const randomAdj = adj[Math.floor(Math.random() * adj.length)];
+  const randomNoun = noun[Math.floor(Math.random() * noun.length)];
+  let bandName = `${randomAdj} ${randomNoun}`;
+  res.render("index.ejs", { bandName: bandName, year : year });
   //Hint: When the "Generate Name" button in index.ejs is clicked, it should hit up this route.
   //Then:
   //1. You should randomly pick an adjective from the const "adj" and a noun from const "noun",
