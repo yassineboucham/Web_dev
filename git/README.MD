@@ -157,5 +157,10 @@ To verify the linked remote repository:
 git remote -v
 ```
 
+# git diff name_of_file
+# git checkout name_of_file
+# .gitignor
+# git rm --cached -r
+
 ## Conclusion
 This guide covers essential Git commands for version control. Mastering Git improves collaboration, ensures code integrity, and enhances development workflows.
