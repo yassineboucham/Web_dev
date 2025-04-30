@@ -6,7 +6,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "123456",
+  password: "2002",
   port: 5432,
 });
 
@@ -25,6 +25,7 @@ db.query("SELECT * FROM flags", (err, res) => {
   db.end();
 });
 
+
 let totalCorrect = 0;
 
 // Middleware
@@ -32,6 +33,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 let currentQuestion = {};
+
 
 // GET home page
 app.get("/", async (req, res) => {

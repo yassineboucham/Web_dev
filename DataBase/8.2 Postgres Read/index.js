@@ -1,5 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
+import pg from "pg";
 
 const app = express();
 const port = 3000;
@@ -10,7 +11,29 @@ let totalCorrect = 0;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+
 let currentQuestion = {};
+
+const db = new pg.Client({
+  user: "postgres",
+  host: "localhost",
+  database: "world",
+  password: "2002",
+  port: 5432,
+});
+
+db.connect();
+
+let data = [];
+
+db.query("SELECT * FROM capitals", (err, res) => {
+  if (err) {
+    console.error("Error:", err.stack);
+  } else {
+    data = res.rows;
+  }
+  db.end();
+});
 
 // GET home page
 app.get("/", (req, res) => {
@@ -39,7 +62,7 @@ app.post("/submit", (req, res) => {
 });
 
 function nextQuestion() {
-  const randomCountry = quiz[Math.floor(Math.random() * quiz.length)];
+  const randomCountry = data[Math.floor(Math.random() * data.length)];
   currentQuestion = randomCountry;
 }
 
