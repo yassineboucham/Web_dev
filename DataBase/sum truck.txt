@@ -1,0 +1,2 @@
+SELECT country FROM world_food WHERE country LIKE 'U' || '%' ==> evey word start by u
+SELECT country FROM world_food WHERE country LIKE '%' || 'n' ==> evey word start by n
