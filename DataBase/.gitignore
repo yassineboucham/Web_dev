@@ -1,0 +1,17 @@
+
+node_modules/
+npm-debug.log
+package-lock.json
+/public/uploads
+/views/partials/*.ejs
+/views/*.ejs
+/routes/*.js
+/models/*.js
+/controllers/*.js
+/app.js
+/server.js
+/config/*.js
+/logs
+/logs/*.log
+/logs/*/*.log
+/logs/*/*/*.log
